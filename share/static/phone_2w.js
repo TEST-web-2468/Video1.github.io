@@ -11,7 +11,7 @@ const servers = {
 let localStream;
 let sender;
 let pc = new RTCPeerConnection(servers);  
-var t2 = window.location.href.split('https://videoaudiocall-1.brettlee21.repl.co/')[1].split('/')[0]
+var t2= window.location.href.split('https://videoaudiocall-1.brettlee21.repl.co/')[1].split('/')[0]
 let offer = async () => {
     await createPeerConnection(document.getElementById('to_user').value)
     let off = await pc.createOffer()
